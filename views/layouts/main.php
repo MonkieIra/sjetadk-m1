@@ -44,7 +44,9 @@ AppAsset::register($this);
         $items[] = ['label' => 'Авторизация', 'url' => ['/site/login']];
     }
     else{
-       
+        if(Yii::$app->user->identity->username =='copp'){
+            $items [] = ['label' => 'Панель администратора', 'url' => ['/request/index']];
+        }
         else{
             $items []  = ['label' => 'Заявления', 'url' => ['/request/index']];
             $items [] = ['label' => 'Формирование заявления', 'url' => ['/request/create']];
