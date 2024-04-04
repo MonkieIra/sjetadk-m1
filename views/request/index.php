@@ -33,6 +33,19 @@ $this->params['breadcrumbs'][] = $this->title;
             'description',
             'address',
 
+            #Делаем так, чтобы id выводились как в связанных таблицах
+            ['attribute'=>'id_status',
+            'value'=>function ($model){
+                return
+                $model->status->status;
+            },
+            ],
+            ['attribute'=>'id_user',
+            'value'=>function ($model){
+                return
+                $model->user->surname;
+            },
+            ],
             
             [
                 'class' => ActionColumn::className(),
