@@ -37,7 +37,13 @@ class LoginForm extends Model
 
     #Переводим названия на русский
 
-    
+    public function attributeLabels()
+    {
+        return [
+            'username' => 'Логин',
+            'password' => 'Пароль',
+        ];
+    }
 
     /**
      * Validates the password.
