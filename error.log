@@ -1,0 +1,2 @@
+[Thu Apr 04 03:47:06.679456 2024] [core:alert] [pid 27454] [client 10.21.0.179:51922] /srv/users/ibbujpvj/sjetadk-m1/.htaccess: RewriteRule: bad argument line '(.*)web/index.php', referer: http://wsr.ru/
+[Thu Apr 04 05:41:45.464979 2024] [php:error] [pid 14914] [client 10.21.0.179:60676] PHP Fatal error:  Cannot use empty array elements in arrays in /srv/users/ibbujpvj/sjetadk-m1/views/request/index.php on line 41, referer: http://sjetadk-m1.wsr.ru/web/index.php?r=request%2Findex&sort=description
